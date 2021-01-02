@@ -39,6 +39,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 809670693
+    locked: 0
+  - name: Ground
+    uniqueID: 881737865
+    locked: 0
+  - name: Overlap Ground
+    uniqueID: 152623807
+    locked: 0
+  - name: Details and Objects
+    uniqueID: 867407591
+    locked: 0
+  - name: Player
+    uniqueID: 3007942069
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
