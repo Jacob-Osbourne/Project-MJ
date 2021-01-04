@@ -12,6 +12,9 @@ public class ChargedJump : MonoBehaviour
     public bool isJumping = false;
     public float maxCharge = 0f;
     public Ray ray;
+    public bool jumpOnCD = false;
+
+    public float TESTJUMP;
 
     [Header("Animation Info")]
     public float PlayersY;
@@ -30,27 +33,40 @@ public class ChargedJump : MonoBehaviour
 
     void Update()
     {
-
-        if (Input.GetMouseButton(0))
+        if (!jumpOnCD)
         {
-            chargePower += Time.deltaTime;
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Debug.Log(ray);
-
-            isCharging = true;
-            animator.SetBool("isCharging", true);
-
-            jumpLeftRight = (ray.GetPoint(0).x - gameObject.transform.position.x);
-            
-            if (jumpLeftRight > 0)
+            if (Input.GetMouseButton(0) && !isJumping)
             {
-                animator.SetBool("onRight", true);
-            }
-            else
-            {
-                animator.SetBool("onRight", false);
+                chargePower += Time.deltaTime;
+                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                Debug.Log(ray);
+
+                isCharging = true;
+                animator.SetBool("isCharging", true);
+
+                jumpLeftRight = (ray.GetPoint(0).x - gameObject.transform.position.x);
+
+                if (jumpLeftRight > 0)
+                {
+                    animator.SetBool("onRight", true);
+                }
+                else
+                {
+                    animator.SetBool("onRight", false);
+                }
+
             }
 
+            if (Input.GetMouseButtonUp(0) && !isJumping && isCharging)
+            {
+
+                isCharging = false;
+                animator.SetBool("isCharging", false);
+                animator.SetBool("Grounded", false);
+                animator.SetBool("jumpOnCooldown", true);
+                jumpNow = true;
+                PlayersY = gameObject.transform.position.y;
+            }
         }
 
         if (PlayersY > gameObject.transform.position.y)
@@ -64,17 +80,6 @@ public class ChargedJump : MonoBehaviour
             PlayersY = gameObject.transform.position.y;
             isFalling = false;
             animator.SetBool("isFalling", false);
-        }
-
-        if (Input.GetMouseButtonUp(0) && !isJumping)
-        {
-
-            isCharging = false;
-            animator.SetBool("isCharging", false);
-            animator.SetBool("Grounded", false);
-            jumpNow = true;
-            PlayersY = gameObject.transform.position.y;
-
         }
     }
 
@@ -97,8 +102,8 @@ public class ChargedJump : MonoBehaviour
 
             jumpNow = false;
             isJumping = true;
+            
         }
-
 
     }
 
@@ -106,10 +111,21 @@ public class ChargedJump : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+
             animator.SetBool("Grounded", true);
             isJumping = false;
             chargePower = 0;
+            jumpOnCD = true;
+            StartCoroutine(JumpCooldown());
+
         }
+    }
+
+    IEnumerator JumpCooldown()
+    {
+        yield return new WaitForSeconds(0.5f);
+        animator.SetBool("jumpOnCooldown", false);
+        jumpOnCD = false;
     }
 
 }
