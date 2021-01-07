@@ -34,18 +34,22 @@ public class MovePlatformHorz : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.gameObject.transform.position.x < maxRightOfOrigin && goingRight)
+        if (this.gameObject.transform.position.x < myMaxR && goingRight)
         {
             this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x + Time.deltaTime, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
         }
-        else if (this.gameObject.transform.position.y > maxLeftOfOrigin && !goingRight)
+        else if (this.gameObject.transform.position.x > myMaxL && !goingRight)
         {
             this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x - Time.deltaTime, this.gameObject.transform.position.y, this.gameObject.transform.position.z);
         }
 
-        if (this.gameObject.transform.position.y > myMaxR || this.gameObject.transform.position.y < myMaxL)
+        if (this.gameObject.transform.position.x > myMaxR )
         {
-            goingRight = !goingRight;
+            goingRight = false;
+        }
+        if (this.gameObject.transform.position.x < myMaxL)
+        {
+            goingRight = true;
         }
     }
 }

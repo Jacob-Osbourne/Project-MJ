@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public ChargedJump player;
+    public PlayerController player;
     public Vector3 offset;
     //public float smoothSpeed = 0.125f;
 
@@ -14,7 +14,7 @@ public class CameraMovement : MonoBehaviour
     {
        if (player == null)
         {
-            player = FindObjectOfType<ChargedJump>();
+            player = FindObjectOfType<PlayerController>();
         }
     }
 

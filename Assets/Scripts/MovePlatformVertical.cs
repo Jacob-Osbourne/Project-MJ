@@ -34,18 +34,22 @@ public class MovePlatformVertical : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.gameObject.transform.position.y < maxAboveOrigin && goingUp)
+        if (this.gameObject.transform.position.y < myMax && goingUp)
         {
             this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + Time.deltaTime, this.gameObject.transform.position.z);
         }
-        else if (this.gameObject.transform.position.y > maxBelowOrigin && !goingUp)
+        else if (this.gameObject.transform.position.y > myMin && !goingUp)
         {
             this.gameObject.transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y - Time.deltaTime, this.gameObject.transform.position.z);
         }
 
-        if (this.gameObject.transform.position.y > myMax || this.gameObject.transform.position.y < myMin)
+        if (this.gameObject.transform.position.y > myMax )
         {
-            goingUp = !goingUp;
+            goingUp = false;
+        }
+        if (this.gameObject.transform.position.y < myMin)
+        {
+            goingUp = true;
         }
     }
 }

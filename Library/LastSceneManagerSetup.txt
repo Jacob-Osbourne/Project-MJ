@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Jumping Prototype.unity
+- path: Assets/Scenes/Platform Workshop.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

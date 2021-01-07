@@ -15,6 +15,18 @@ public class LevelGeneration : MonoBehaviour
     public int platformChoice;
     public float spaceBetween = 20f;
 
+    [Header("Background")]
+    public GameObject startBackground;
+    public GameObject beforeStartBG;
+    public GameObject doubleBefore;
+    private GameObject currBG;
+    private GameObject prevBG;
+    private GameObject prevPrevBG;
+    private GameObject prevPrevPrevBG;
+    public GameObject bgForward;
+    public GameObject bgBackward;
+    public bool forward;
+
    
 
 
@@ -25,6 +37,15 @@ public class LevelGeneration : MonoBehaviour
         prevPlatform = startPlatform;
         currPlatform = Instantiate(listOfPlatforms[platformChoice], parentObject.transform.position + (transform.right * spaceBetween), new Quaternion(0f,0f,0f,0f));
         currPlatform.transform.parent = parentObject.transform;
+
+        prevPrevPrevBG = doubleBefore;
+        prevPrevBG = beforeStartBG;
+        prevBG = startBackground;
+        currBG = Instantiate(bgBackward, parentObject.transform.position + (transform.right * spaceBetween) - new Vector3(2.25f, 0, 0), new Quaternion(0f, 0f, 0f, 0f));
+        currBG.transform.parent = parentObject.transform;
+        forward = false;
+
+
     }
 
     // Update is called once per frame
@@ -37,7 +58,30 @@ public class LevelGeneration : MonoBehaviour
             platformChoice = Random.Range(0, listOfPlatforms.Length);
             currPlatform = Instantiate(listOfPlatforms[platformChoice], prevPlatform.transform.position + (transform.right * spaceBetween), new Quaternion(0f, 0f, 0f, 0f));
             currPlatform.transform.parent = parentObject.transform;
-        } 
+
+            
+        }
+
+        if (Camera.main.transform.position.x > currBG.transform.position.x)
+        {
+
+            Destroy(prevPrevPrevBG.gameObject);
+            prevPrevPrevBG = prevPrevBG;
+            prevPrevBG = prevBG;
+            prevBG = currBG;
+            if (forward)
+            {
+                currBG = Instantiate(bgForward, prevBG.transform.position + (transform.right * spaceBetween) - new Vector3(2.25f, 0, 0), new Quaternion(0f, 0f, 0f, 0f));
+                currBG.transform.parent = parentObject.transform;
+                forward = !forward;
+            }
+            else
+            {
+                currBG = Instantiate(bgBackward, prevBG.transform.position + (transform.right * spaceBetween) - new Vector3(2.25f, 0, 0), new Quaternion(0f, 0f, 0f, 0f));
+                currBG.transform.parent = parentObject.transform;
+                forward = !forward;
+            }
+        }
     
     }
 }
