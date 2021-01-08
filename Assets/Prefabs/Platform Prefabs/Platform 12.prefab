@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8229705974034839242}
   - component: {fileID: 8229705974034839241}
   m_Layer: 0
-  m_Name: Ground
+  m_Name: Details and Objects
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -176,8 +176,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 881737865
-  m_SortingLayer: -4
+  m_SortingLayerID: 867407591
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -423,6 +423,7 @@ GameObject:
   - component: {fileID: 8229705974605754799}
   - component: {fileID: 8229705974605754798}
   - component: {fileID: 8229705974605754797}
+  - component: {fileID: 231456360293252619}
   m_Layer: 0
   m_Name: Moving Object
   m_TagString: Ground
@@ -645,8 +646,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 867407591
-  m_SortingLayer: -2
+  m_SortingLayerID: 881737865
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -687,6 +688,19 @@ MonoBehaviour:
   maxAboveOrigin: 0.25
   maxBelowOrigin: 0.25
   goingUp: 0
+--- !u!114 &231456360293252619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8229705974605754787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523123c13f1a3cd4f95016f44e77a3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!1 &8229705974779786313
 GameObject:
   m_ObjectHideFlags: 0
@@ -697,7 +711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8229705974779786314}
   m_Layer: 0
-  m_Name: Platform 12 J
+  m_Name: Platform 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -710,7 +724,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8229705974779786313}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -736,7 +750,7 @@ GameObject:
   - component: {fileID: 8229705975301685047}
   - component: {fileID: 8229705975301685046}
   m_Layer: 0
-  m_Name: Details and Objects
+  m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -907,8 +921,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 867407591
-  m_SortingLayer: -2
+  m_SortingLayerID: 881737865
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -947,6 +961,7 @@ GameObject:
   - component: {fileID: 8229705975399995475}
   - component: {fileID: 8229705975399995474}
   - component: {fileID: 8229705975399995473}
+  - component: {fileID: 2612550106610614156}
   m_Layer: 0
   m_Name: Moving Object 2
   m_TagString: Ground
@@ -1169,8 +1184,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 867407591
-  m_SortingLayer: -2
+  m_SortingLayerID: 881737865
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1208,9 +1223,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c877c2d40c79c3d4595294fac50cec6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAboveOrigin: 0
+  maxAboveOrigin: 0.5
   maxBelowOrigin: 0.5
   goingUp: 0
+--- !u!114 &2612550106610614156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8229705975399995479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523123c13f1a3cd4f95016f44e77a3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
 --- !u!1 &8229705975541711950
 GameObject:
   m_ObjectHideFlags: 0

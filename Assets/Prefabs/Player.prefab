@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1330269345832759004}
   - component: {fileID: 1330269345832759003}
   - component: {fileID: 1330269345832759002}
-  - component: {fileID: 1330269345832759001}
+  - component: {fileID: 2593799535274418080}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -184,7 +184,7 @@ PolygonCollider2D:
       - {x: -0.21347335, y: -0.2321434}
       - {x: -0.21663165, y: -0.23407081}
       - {x: -0.21496943, y: -0.23525646}
---- !u!114 &1330269345832759001
+--- !u!114 &2593799535274418080
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

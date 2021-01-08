@@ -16,7 +16,7 @@ MonoBehaviour:
     m_Keys:
     - 
     m_Values: 01
-  RevisionSummary: 
+  RevisionSummary: fixed a couple bugs and platform stuff
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

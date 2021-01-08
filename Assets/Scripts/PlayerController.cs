@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
             {
                 chargePower += Time.deltaTime;
                 ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                Debug.Log(ray);
+                //Debug.Log(ray);
 
                 isCharging = true;
                 animator.SetBool("isCharging", true);
@@ -99,7 +99,7 @@ public class PlayerController : MonoBehaviour
             float rightForce = (ray.GetPoint(0).x - gameObject.transform.position.x);
             rb.AddForce(rb.transform.right * rightForce * (chargePower + 1) * sideForce);
             
-            Debug.Log(rightForce);
+            //Debug.Log(rightForce);
 
             jumpNow = false;
             isJumping = true;
@@ -134,7 +134,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("DeathZone"))
         {
             //load a game over/try again scene
-            SceneManager.LoadScene("Procedural Generation Prototype");
+            SceneManager.LoadScene("Game");
         }
 
         //add collision detection for other objects and cue death animation from here

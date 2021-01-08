@@ -59,10 +59,13 @@
     <Compile Include="Assets\Scripts\LevelGeneration.cs" />
     <Compile Include="Assets\Scripts\FallingRock.cs" />
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\ChargeBar.cs" />
     <Compile Include="Assets\Scripts\MovePlatformHorz.cs" />
     <Compile Include="Assets\Scripts\AttachToPlatform.cs" />
     <Compile Include="Assets\Scripts\MovePlatformVertical.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\UIToggle.cs" />
+    <Compile Include="Assets\Scripts\PlayerScore.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
