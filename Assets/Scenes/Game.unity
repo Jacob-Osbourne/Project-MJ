@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 601903634}
   - component: {fileID: 601903636}
   - component: {fileID: 601903635}
+  - component: {fileID: 601903637}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -343,7 +344,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 15
+  m_Text: 0
 --- !u!222 &601903636
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -352,6 +353,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601903633}
   m_CullTransparentMesh: 1
+--- !u!114 &601903637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601903633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1643c31467d5a143b5d9111b6c27492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pc: {fileID: 0}
+  playerScore: 0
+  scoreMax: 0
+  playerScoreText: {fileID: 601903635}
 --- !u!1 &822896629
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,6 +790,14 @@ PrefabInstance:
     - target: {fileID: 4798104955460113810, guid: de6ed52af7d44734ba97c1dce03d1fb0, type: 3}
       propertyPath: m_Name
       value: Start Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798104955959064817, guid: de6ed52af7d44734ba97c1dce03d1fb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4798104957101524312, guid: de6ed52af7d44734ba97c1dce03d1fb0, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5395273498132324883, guid: de6ed52af7d44734ba97c1dce03d1fb0, type: 3}
       propertyPath: m_RootOrder
@@ -1326,6 +1351,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1330269345832759003, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330269345832759003, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330269345832759003, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330269345832759003, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1330269345832759006, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1336,7 +1377,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1330269345832759006, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.92
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 1330269345832759006, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1371,8 +1412,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2593799535274418080, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
+      propertyPath: force
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593799535274418080, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
+      propertyPath: sideForce
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593799535274418080, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
       propertyPath: chargePower
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2593799535274418080, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}

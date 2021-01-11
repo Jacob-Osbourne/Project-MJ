@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6826031604212245788}
   - component: {fileID: 6826031604212245789}
   - component: {fileID: 6826031604212245786}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moving Object 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!114 &6826031604212245789
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 6826031604268232291}
   - component: {fileID: 6826031604268232288}
   - component: {fileID: 6826031604268232289}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moving Object 5
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -501,7 +501,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!114 &6826031604268232288
@@ -546,7 +546,7 @@ GameObject:
   - component: {fileID: 6826031604314088679}
   - component: {fileID: 6826031604314088676}
   - component: {fileID: 6826031604314088677}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moving Object 4
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!114 &6826031604314088676
@@ -805,7 +805,7 @@ GameObject:
   - component: {fileID: 6826031604324147147}
   - component: {fileID: 6826031604324147144}
   - component: {fileID: 6826031604324147145}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1001,7 +1001,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!1 &6826031604342484249
@@ -1057,7 +1057,7 @@ GameObject:
   - component: {fileID: 6826031604348614496}
   - component: {fileID: 6826031604348614497}
   - component: {fileID: 6826031604348614510}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moving Object
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1273,7 +1273,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!114 &6826031604348614497
@@ -1318,7 +1318,7 @@ GameObject:
   - component: {fileID: 6826031605117597373}
   - component: {fileID: 6826031605117597370}
   - component: {fileID: 6826031605117597371}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moving Object 3
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1544,7 +1544,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!114 &6826031605117597370
@@ -1832,7 +1832,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!1 &6826031606110822716
@@ -2039,6 +2039,6 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001

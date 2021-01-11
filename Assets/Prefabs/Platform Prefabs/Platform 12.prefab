@@ -200,7 +200,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!1 &8229705974179972779
@@ -407,7 +407,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!1 &8229705974605754787
@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 8229705974605754798}
   - component: {fileID: 8229705974605754797}
   - component: {fileID: 231456360293252619}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moving Object
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -670,7 +670,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!114 &8229705974605754797
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 8229705975301685040}
   - component: {fileID: 8229705975301685047}
   - component: {fileID: 8229705975301685046}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -945,7 +945,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!1 &8229705975399995479
@@ -962,7 +962,7 @@ GameObject:
   - component: {fileID: 8229705975399995474}
   - component: {fileID: 8229705975399995473}
   - component: {fileID: 2612550106610614156}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Moving Object 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -1208,7 +1208,7 @@ TilemapCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
+  m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
 --- !u!114 &8229705975399995473
