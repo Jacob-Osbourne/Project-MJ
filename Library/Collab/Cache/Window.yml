@@ -14,17 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Art/Tileset/Tiles/Ground_grass_0034_tile.png.meta
-    - Assets/Art/Tileset/Tiles/Ground_grass_0035_tile.png.meta
-    - Assets/Art/Tileset/Tiles/Ground_grass_0036_tile.png.meta
-    - Assets/Art/Tileset/Tiles/Ground_grass_0037_tile.png.meta
-    - Assets/Art/Tileset/Tiles/Ground_grass_0040_tile.png.meta
-    - Assets/Art/Tileset/Tiles/Ground_grass_0041_tile.png.meta
-    - Assets/Art/Tileset/Tiles/Ground_grass_0042_tile.png.meta
-    - Assets/Art/Tileset/Tiles/Ground_grass_0043_tile.png.meta
     - 
-    m_Values: 010101010101010101
-  RevisionSummary: tesing jumping box
+    m_Values: 01
+  RevisionSummary: Added 10 more platforms
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

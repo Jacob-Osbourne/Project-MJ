@@ -128,14 +128,14 @@ TextureImporter:
     sprites: []
     outline: []
     physicsShape:
-    - - {x: 28, y: 32}
+    - - {x: 25, y: 32}
       - {x: -25, y: 32}
       - {x: -25, y: 23}
       - {x: -32, y: 23}
       - {x: -32, y: -28}
-      - {x: -2, y: -28}
-      - {x: 25, y: 7}
-      - {x: 28, y: 19}
+      - {x: -8, y: -25}
+      - {x: 15, y: -4}
+      - {x: 25, y: 14}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
