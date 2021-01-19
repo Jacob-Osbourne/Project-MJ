@@ -9,7 +9,10 @@ public class PlayerScore : MonoBehaviour
     public PlayerController pc;
     public float playerScore;
     public float scoreMax;
+    public float currentScore;
     public Text playerScoreText;
+    public Text onDeathScore;
+    public Text onDeathHighScore;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +32,12 @@ public class PlayerScore : MonoBehaviour
         {
             playerScoreText.text = scoreMax.ToString("F0");
             scoreMax = playerScore;
+            currentScore = playerScore;
         }
 
-        
+        onDeathScore.text = "Score: " + playerScore.ToString("F0");
+        onDeathHighScore.text = "Best: " + PlayerPrefs.GetFloat("HighScore").ToString("F0");
     }
+
+     
 }

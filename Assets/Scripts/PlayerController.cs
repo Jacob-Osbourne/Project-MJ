@@ -25,13 +25,18 @@ public class PlayerController : MonoBehaviour
     public bool isFalling;
     public float jumpLeftRight;
 
+    [Header("Player Score")]
+    public PlayerScore PlayerScoreScript;
+
     private Rigidbody2D rb;
     private Animator animator;
     private bool jumpNow = false;
+    public bool isDead = false;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        isDead = false;
     }
 
     void Update()
@@ -147,10 +152,16 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("DeathZone"))
         {
-            //load a game over/try again scene
-            SceneManager.LoadScene("Game");
+            // death bool
+            isDead = true;
+            //save score
+            PlayGamesScript.AddScoreToLeaderboard(GPGSIds.leaderboard_high_scores, (long)PlayerScoreScript.scoreMax);
+            float playerHighScore = PlayerPrefs.GetFloat("HighScore");
+            if (PlayerScoreScript.scoreMax > playerHighScore)
+            {
+                PlayerPrefs.SetFloat("HighScore", PlayerScoreScript.scoreMax);
+            }
         }
-
         //add collision detection for other objects and cue death animation from here
     }
 

@@ -996,13 +996,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1200407398}
     m_Modifications:
+    - target: {fileID: 338436996326677333, guid: e164fbf7735e91e4e83864b49194ab7c, type: 3}
+      propertyPath: maxLeftOfOrigin
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 338436996326677333, guid: e164fbf7735e91e4e83864b49194ab7c, type: 3}
+      propertyPath: maxRightOfOrigin
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1165547366703061921, guid: e164fbf7735e91e4e83864b49194ab7c, type: 3}
       propertyPath: m_Name
       value: Platform 28
       objectReference: {fileID: 0}
     - target: {fileID: 1165547366703061921, guid: e164fbf7735e91e4e83864b49194ab7c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1165547366703061934, guid: e164fbf7735e91e4e83864b49194ab7c, type: 3}
       propertyPath: m_RootOrder

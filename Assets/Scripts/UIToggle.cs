@@ -6,6 +6,7 @@ public class UIToggle : MonoBehaviour
 {
     private PlayerController pc;
     public GameObject chargeBarUI;
+    public GameObject onDeathUI;
 
     private void Awake()
     {
@@ -16,6 +17,8 @@ public class UIToggle : MonoBehaviour
     {
         chargeBarUI.SetActive(false);
         pc = FindObjectOfType<PlayerController>();
+        onDeathUI.SetActive(false);
+        Time.timeScale = 1;
     }
 
     // Update is called once per frame
@@ -29,6 +32,12 @@ public class UIToggle : MonoBehaviour
         if (pc.chargePower == 0)
         {
             chargeBarUI.SetActive(false);
+        }
+
+        if (pc.isDead)
+        {
+            onDeathUI.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }

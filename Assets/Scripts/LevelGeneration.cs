@@ -19,6 +19,8 @@ public class LevelGeneration : MonoBehaviour
     public GameObject startBackground;
     public GameObject beforeStartBG;
     public GameObject doubleBefore;
+    public float xCompare;
+    private GameObject UpBG;
     private GameObject currBG;
     private GameObject prevBG;
     private GameObject prevPrevBG;
@@ -43,7 +45,10 @@ public class LevelGeneration : MonoBehaviour
         prevBG = startBackground;
         currBG = Instantiate(bgBackward, parentObject.transform.position + (transform.right * spaceBetween) - new Vector3(2.25f, 0, 0), new Quaternion(0f, 0f, 0f, 0f));
         currBG.transform.parent = parentObject.transform;
-        forward = false;
+        UpBG = Instantiate(bgForward, parentObject.transform.position + (transform.right * spaceBetween) - new Vector3(20f, 0, 0), new Quaternion(0f, 0f, 0f, 0f));
+        UpBG.transform.parent = parentObject.transform;
+        xCompare = 7;
+        forward = true;
 
 
     }
@@ -62,23 +67,25 @@ public class LevelGeneration : MonoBehaviour
             
         }
 
-        if (Camera.main.transform.position.x > currBG.transform.position.x)
+        if (Camera.main.transform.position.x > xCompare )
         {
 
+            xCompare += 17.75f;
             Destroy(prevPrevPrevBG.gameObject);
             prevPrevPrevBG = prevPrevBG;
             prevPrevBG = prevBG;
             prevBG = currBG;
+            currBG = UpBG;
             if (forward)
             {
-                currBG = Instantiate(bgForward, prevBG.transform.position + (transform.right * spaceBetween) - new Vector3(2.25f, 0, 0), new Quaternion(0f, 0f, 0f, 0f));
-                currBG.transform.parent = parentObject.transform;
+                UpBG = Instantiate(bgForward, new Vector3(xCompare + 10.75f, 0, 0), new Quaternion(0f, 0f, 0f, 0f));
+                UpBG.transform.parent = parentObject.transform;
                 forward = !forward;
             }
             else
             {
-                currBG = Instantiate(bgBackward, prevBG.transform.position + (transform.right * spaceBetween) - new Vector3(2.25f, 0, 0), new Quaternion(0f, 0f, 0f, 0f));
-                currBG.transform.parent = parentObject.transform;
+                UpBG = Instantiate(bgBackward, new Vector3(xCompare + 10.75f, 0, 0), new Quaternion(0f, 0f, 0f, 0f));
+                UpBG.transform.parent = parentObject.transform;
                 forward = !forward;
             }
         }

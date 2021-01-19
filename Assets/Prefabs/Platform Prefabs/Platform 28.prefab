@@ -484,8 +484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c57bf93381dd24a84f3360c8e22e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxRightOfOrigin: 2
-  maxLeftOfOrigin: 2
+  maxRightOfOrigin: 4
+  maxLeftOfOrigin: 4
   goingRight: 0
 --- !u!114 &338436996326677330
 MonoBehaviour:

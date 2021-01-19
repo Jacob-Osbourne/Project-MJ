@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637447976145609984
+      ticks: 637466115203742976
     m_Hash: 157013556
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -86,6 +86,7 @@ m_PackageAssets:
         - 4.2.4
         - 4.2.5
         - 4.2.6
+        - 4.2.8
         - 5.0.0
         - 5.0.1
         - 5.0.2
@@ -267,6 +268,7 @@ m_PackageAssets:
         - 3.1.4
         - 3.1.5
         - 3.1.6
+        - 3.1.7
         - 4.0.0
         - 4.0.1
         - 4.0.2
@@ -437,6 +439,7 @@ m_PackageAssets:
         - 4.1.2
         - 4.1.3
         - 4.1.4
+        - 4.1.5
         - 5.0.0
         - 5.0.1
         - 5.0.2
@@ -1156,6 +1159,7 @@ m_PackageAssets:
         - 1.2.15
         - 1.2.16
         - 1.2.17
+        - 1.2.18
         - 1.3.0-preview.2
         - 1.3.0-preview.3
         - 1.3.0-preview.5
@@ -1168,6 +1172,7 @@ m_PackageAssets:
         - 1.3.4
         - 1.3.5
         - 1.3.6
+        - 1.3.7
         - 1.4.0-preview.1
         - 1.4.0-preview.2
         - 1.4.0-preview.3
@@ -1180,6 +1185,7 @@ m_PackageAssets:
         - 1.4.3
         - 1.4.4
         - 1.4.5
+        - 1.4.6
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -1189,6 +1195,8 @@ m_PackageAssets:
         - 1.5.1-pre.1
         - 1.5.1-pre.2
         - 1.5.1-pre.3
+        - 1.5.2
+        - 1.6.0-pre.1
         compatible:
         - 1.2.6
         - 1.2.7
@@ -1201,6 +1209,7 @@ m_PackageAssets:
         - 1.2.15
         - 1.2.16
         - 1.2.17
+        - 1.2.18
         - 1.3.0-preview.2
         - 1.3.0-preview.3
         - 1.3.0-preview.5
@@ -1213,6 +1222,7 @@ m_PackageAssets:
         - 1.3.4
         - 1.3.5
         - 1.3.6
+        - 1.3.7
         - 1.4.0-preview.1
         - 1.4.0-preview.2
         - 1.4.0-preview.3
@@ -1225,6 +1235,7 @@ m_PackageAssets:
         - 1.4.3
         - 1.4.4
         - 1.4.5
+        - 1.4.6
         - 1.5.0-pre.2
         - 1.5.0-preview.1
         - 1.5.0-preview.2
@@ -1234,7 +1245,9 @@ m_PackageAssets:
         - 1.5.1-pre.1
         - 1.5.1-pre.2
         - 1.5.1-pre.3
-        verified: 1.4.5
+        - 1.5.2
+        - 1.6.0-pre.1
+        verified: 1.4.6
       dependencies:
       - name: com.unity.modules.director
         version: 1.0.0

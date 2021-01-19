@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/Scripts/LevelGeneration.cs
+    - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 01
-  RevisionSummary: Added 10 more platforms
+    m_Values: 000000
+  RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
