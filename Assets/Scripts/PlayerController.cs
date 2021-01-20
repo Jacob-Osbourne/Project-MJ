@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     public bool jumpOnCD = false;
     public bool isGrounded;
     public LayerMask groundMask;
+    public bool isHittingWallL;
+    public bool isHittingWallR;
 
     public float TESTJUMP;
 
@@ -90,12 +92,16 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isFalling", false);
         }
 
-        isGrounded = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.4f, gameObject.transform.position.y - 0.87f), new Vector2(0.45f, 0.2f), 0f, groundMask);
+        isGrounded = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.4f, gameObject.transform.position.y - 0.87f), new Vector2(0.4f, 0.2f), 0f, groundMask);
 
         if (isGrounded)
         {
             isJumping = false;
         }
+
+        isHittingWallR = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.2f, gameObject.transform.position.y - 0.3f), new Vector2(0.1f, 0.6f), 0f, groundMask);
+
+        isHittingWallL = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.6f, gameObject.transform.position.y - 0.3f), new Vector2(0.1f, 0.6f), 0f, groundMask);
     }
 
     private void FixedUpdate()
@@ -110,12 +116,12 @@ public class PlayerController : MonoBehaviour
             
             //rb.AddForce(rb.transform.up * (chargePower + 1) * force);
 
-            Debug.Log("UP FORCE: " + (rb.transform.up * (chargePower + 1) * force));
+            //Debug.Log("UP FORCE: " + (rb.transform.up * (chargePower + 1) * force));
 
             float rightForce = (ray.GetPoint(0).x - gameObject.transform.position.x);
             //rb.AddForce(rb.transform.right * rightForce * (chargePower + 1) * sideForce);
 
-            Debug.Log("RIGHT FORCE: " + (rb.transform.right * rightForce * (chargePower + 1) * sideForce));
+            //Debug.Log("RIGHT FORCE: " + (rb.transform.right * rightForce * (chargePower + 1) * sideForce));
 
             //Debug.Log(rightForce);
 
@@ -125,6 +131,16 @@ public class PlayerController : MonoBehaviour
             jumpNow = false;
             isJumping = true;
             
+        }
+
+        if (isHittingWallR)
+        {
+            rb.AddForce(rb.transform.right * -10f);
+        }
+
+        if (isHittingWallL)
+        {
+            rb.AddForce(rb.transform.right * 10f);
         }
 
     }
@@ -161,6 +177,8 @@ public class PlayerController : MonoBehaviour
             {
                 PlayerPrefs.SetFloat("HighScore", PlayerScoreScript.scoreMax);
             }
+
+            PlayerPrefs.SetFloat("currentScore", PlayerScoreScript.currentScore);
         }
         //add collision detection for other objects and cue death animation from here
     }
@@ -168,7 +186,13 @@ public class PlayerController : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawCube(new Vector2(gameObject.transform.position.x -0.4f, gameObject.transform.position.y - 0.87f), new Vector2(0.45f, 0.2f));
+        Gizmos.DrawCube(new Vector2(gameObject.transform.position.x -0.4f, gameObject.transform.position.y - 0.87f), new Vector2(0.4f, 0.2f));
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawCube(new Vector2(gameObject.transform.position.x - 0.2f, gameObject.transform.position.y - 0.3f), new Vector2(0.1f, 0.6f));
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawCube(new Vector2(gameObject.transform.position.x - 0.6f, gameObject.transform.position.y - 0.3f), new Vector2(0.1f, 0.6f));
     }
 
 }

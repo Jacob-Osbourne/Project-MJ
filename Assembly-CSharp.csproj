@@ -126,6 +126,7 @@
     <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\EndpointDetails.cs" />
     <Compile Include="Assets\Scripts\PlayGamesScript.cs" />
     <Compile Include="Assets\GPGSIds.cs" />
+    <Compile Include="Assets\Scripts\MainMenuQuit.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\GooglePlayGames\Plugins\Android\GooglePlayGamesManifest.plugin\AndroidManifest.xml" />

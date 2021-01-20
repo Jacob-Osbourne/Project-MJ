@@ -801,6 +801,7 @@ MonoBehaviour:
   startBackground: {fileID: 1505925644}
   beforeStartBG: {fileID: 2071522995}
   doubleBefore: {fileID: 350576413}
+  xCompare: 0
   bgForward: {fileID: 4162711973393630507, guid: 8e2e63ee381c7934d9a8d04330e65d02, type: 3}
   bgBackward: {fileID: 2843145929535307173, guid: 7ca692637b0125846bba20a58c08772d, type: 3}
   forward: 0
@@ -929,7 +930,7 @@ MonoBehaviour:
   playerScore: 0
   scoreMax: 0
   currentScore: 0
-  playerScoreText: {fileID: 2031956261}
+  playerScoreText: {fileID: 601903635}
   onDeathScore: {fileID: 2031956261}
   onDeathHighScore: {fileID: 856131119}
 --- !u!1 &1126840855
@@ -1656,7 +1657,7 @@ GameObject:
   - component: {fileID: 2031956260}
   - component: {fileID: 2031956259}
   m_Layer: 5
-  m_Name: Score
+  m_Name: Post Death Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1697,7 +1698,7 @@ MonoBehaviour:
   playerScore: 0
   scoreMax: 0
   currentScore: 0
-  playerScoreText: {fileID: 2031956261}
+  playerScoreText: {fileID: 601903635}
   onDeathScore: {fileID: 2031956261}
   onDeathHighScore: {fileID: 856131119}
 --- !u!114 &2031956260
@@ -2232,26 +2233,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1330269345832759000, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1330269345832759003, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1330269345832759003, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
-      propertyPath: m_LinearDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1330269345832759003, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1330269345832759003, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
-      propertyPath: m_Interpolate
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1330269345832759006, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2262,7 +2243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1330269345832759006, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: 0.8070328
       objectReference: {fileID: 0}
     - target: {fileID: 1330269345832759006, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2297,25 +2278,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2593799535274418080, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
-      propertyPath: force
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 2593799535274418080, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
-      propertyPath: sideForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2593799535274418080, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
-      propertyPath: chargePower
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2593799535274418080, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
       propertyPath: PlayerScoreScript
       value: 
       objectReference: {fileID: 601903637}
-    - target: {fileID: 2593799535274418080, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
-      propertyPath: groundMask.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 798ccb431631c4748bb1d9de04c8d8b4, type: 3}
 --- !u!1001 &4162711974085795623

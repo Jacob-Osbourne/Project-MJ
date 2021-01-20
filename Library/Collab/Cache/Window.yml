@@ -14,11 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scripts/LevelGeneration.cs
-    - ProjectSettings/ProjectSettings.asset
     - 
-    m_Values: 000000
-  RevisionSummary: 
+    m_Values: 01
+  RevisionSummary: fixed the grass block
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

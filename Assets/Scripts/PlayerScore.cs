@@ -1,3 +1,4 @@
+using GooglePlayGames.BasicApi;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,7 +18,7 @@ public class PlayerScore : MonoBehaviour
     void Start()
     {
         pc = FindObjectOfType<PlayerController>();
-        scoreMax =  0f;
+        //scoreMax =  0f;
     }
 
     // Update is called once per frame
@@ -32,10 +33,10 @@ public class PlayerScore : MonoBehaviour
         {
             playerScoreText.text = scoreMax.ToString("F0");
             scoreMax = playerScore;
-            currentScore = playerScore;
+            currentScore = playerScore;          
         }
 
-        onDeathScore.text = "Score: " + playerScore.ToString("F0");
+        onDeathScore.text = "Score: " + PlayerPrefs.GetFloat("currentScore").ToString("F0");
         onDeathHighScore.text = "Best: " + PlayerPrefs.GetFloat("HighScore").ToString("F0");
     }
 

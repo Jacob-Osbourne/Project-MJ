@@ -1,0 +1,598 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 16325 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+F:/Adalco Games/Project MJ/Project MJ
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+16869
+Successfully changed project path to: F:/Adalco Games/Project MJ/Project MJ
+F:/Adalco Games/Project MJ/Project MJ
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 75.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/Adalco Games/Project MJ/Project MJ/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   
+    VRAM:     4043 MB
+    Driver:   26.21.14.3200
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56040
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002458 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 61.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.278 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003436 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 62.92 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.612 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1909 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.6 MB.
+System memory in use after: 87.7 MB.
+
+Unloading 62 unused Assets to reduce memory usage. Loaded Objects now: 2319.
+Total: 4.165300 ms (FindLiveObjects: 0.729300 ms CreateObjectMapping: 0.181600 ms MarkObjects: 3.121700 ms  DeleteObjects: 0.129900 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Art/Tileset
+  artifactKey: Guid(e6eb276084f9dd342b7d3c290b7f2e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset using Guid(e6eb276084f9dd342b7d3c290b7f2e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566eeb07e639da2a8299e56a192b74f0') in 0.010150 seconds
+  Import took 0.015391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.218571 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0001_tile.asset
+  artifactKey: Guid(528cf568673e85e45b9864a269eee385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0001_tile.asset using Guid(528cf568673e85e45b9864a269eee385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ac6bfd59d5c212a18f24a361ce36d8') in 0.140657 seconds
+  Import took 0.160915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.854872 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0000_tile.png
+  artifactKey: Guid(7d752ff0193d8d44e938b974613dd0fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0000_tile.png using Guid(7d752ff0193d8d44e938b974613dd0fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb4ccd93be645be5f060cf89bf0417f') in 0.147893 seconds
+  Import took 0.153648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.867966 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0002_tile.asset
+  artifactKey: Guid(22502f783ff3626449e4afeb41fc0f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0002_tile.asset using Guid(22502f783ff3626449e4afeb41fc0f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa564c0ad7dfb0d66db6f23a18be53a2') in 0.028156 seconds
+  Import took 0.033221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006364 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0002_tile.asset
+  artifactKey: Guid(22502f783ff3626449e4afeb41fc0f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0002_tile.asset using Guid(22502f783ff3626449e4afeb41fc0f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa564c0ad7dfb0d66db6f23a18be53a2') in 0.010445 seconds
+  Import took 0.016355 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.378792 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0001_tile.png
+  artifactKey: Guid(fa540f71c6f189642bba7816042f1ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0001_tile.png using Guid(fa540f71c6f189642bba7816042f1ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e214c046de8e78d5ff556c6eb9cd0e') in 0.026218 seconds
+  Import took 0.048660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.790632 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0002_tile.png
+  artifactKey: Guid(3add0a4d661799d4991fd65d9ad764f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0002_tile.png using Guid(3add0a4d661799d4991fd65d9ad764f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60869cbbd087e78695d781913e729db8') in 0.017959 seconds
+  Import took 0.023039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.497458 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0003_tile.asset
+  artifactKey: Guid(44c8e63f8978a334bbac20664471e9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0003_tile.asset using Guid(44c8e63f8978a334bbac20664471e9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46e2e532c422a5cb24dbf6173708cac') in 0.035753 seconds
+  Import took 0.063364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.165801 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0003_tile.png
+  artifactKey: Guid(2b9ac96c78935ab45aedcc7f6fc79fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0003_tile.png using Guid(2b9ac96c78935ab45aedcc7f6fc79fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '720bf931f5b8bb7dd6ec48d71d626e71') in 0.023195 seconds
+  Import took 0.048870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.140413 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0004_tile.asset
+  artifactKey: Guid(6e35aa778fc3336439ab80423558fa08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0004_tile.asset using Guid(6e35aa778fc3336439ab80423558fa08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360baabd3b4f9b1c7ed8ddeee62c3437') in 0.026297 seconds
+  Import took 0.053144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.197357 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0004_tile.png
+  artifactKey: Guid(0e2c23bf1fc7b114c89f49a1aa3c88a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0004_tile.png using Guid(0e2c23bf1fc7b114c89f49a1aa3c88a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db15c229a670001e00d7add905fbe3c4') in 0.019979 seconds
+  Import took 0.032991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.162784 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0005_tile.asset
+  artifactKey: Guid(a25904678c7d7b7409e98e088e72bd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0005_tile.asset using Guid(a25904678c7d7b7409e98e088e72bd0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '614abe98ccd8765d5208beaac684e6ac') in 0.021977 seconds
+  Import took 0.026530 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.172093 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0005_tile.png
+  artifactKey: Guid(e3d92c8a5146ce945a9ebfbaf3ace82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0005_tile.png using Guid(e3d92c8a5146ce945a9ebfbaf3ace82c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eb9e215b0104d67e4f828f6b4a7d604') in 0.018599 seconds
+  Import took 0.024924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.164515 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0006_tile.asset
+  artifactKey: Guid(0fdae13c634985f49b11436a8879854e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0006_tile.asset using Guid(0fdae13c634985f49b11436a8879854e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a643d91adfd04c9388fa211a067546b9') in 0.023597 seconds
+  Import took 0.029967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.199604 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0006_tile.png
+  artifactKey: Guid(fa9106f8c24e8594aad07a6488e3c9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0006_tile.png using Guid(fa9106f8c24e8594aad07a6488e3c9c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e716409f0207ebc2f25c8f15d0e190dd') in 0.041683 seconds
+  Import took 0.066218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.159035 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0007_tile.asset
+  artifactKey: Guid(1fc1b04ff5eeed343bc8f376919445a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0007_tile.asset using Guid(1fc1b04ff5eeed343bc8f376919445a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '577e056888711185d6173356a72d25cb') in 0.028664 seconds
+  Import took 0.036159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.022768 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0007_tile.asset
+  artifactKey: Guid(1fc1b04ff5eeed343bc8f376919445a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0007_tile.asset using Guid(1fc1b04ff5eeed343bc8f376919445a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '577e056888711185d6173356a72d25cb') in 0.007311 seconds
+  Import took 0.013888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.272431 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0007_tile.png
+  artifactKey: Guid(3ebfbfbfdf856c246b99ace8d482a16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0007_tile.png using Guid(3ebfbfbfdf856c246b99ace8d482a16d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '732bb1e0dc0f08d908691cb706e1ef9e') in 0.032427 seconds
+  Import took 0.039221 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.291843 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0008_tile.asset
+  artifactKey: Guid(629bf57567fb27e4ca738d7d5a111c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0008_tile.asset using Guid(629bf57567fb27e4ca738d7d5a111c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57fe808d8b9f6b078d07fd3ee97c8550') in 0.051365 seconds
+  Import took 0.056565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.241225 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0008_tile.png
+  artifactKey: Guid(76f8868cce37c2d468f9a10f0e5bc55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0008_tile.png using Guid(76f8868cce37c2d468f9a10f0e5bc55d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d90d19889a0fd3ceba16ac4bcd9c632') in 0.020634 seconds
+  Import took 0.025964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.328118 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0009_tile.asset
+  artifactKey: Guid(a5956f71413b6a640a33a20f21c16870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0009_tile.asset using Guid(a5956f71413b6a640a33a20f21c16870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42c78f328609b4590f81930ed36a9fa3') in 0.023818 seconds
+  Import took 0.027934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.265701 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0009_tile.png
+  artifactKey: Guid(6f2a33ab06a82b44badb23f789c47c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0009_tile.png using Guid(6f2a33ab06a82b44badb23f789c47c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0df40ed0fd1b0967b769b0f20bcec627') in 0.017649 seconds
+  Import took 0.025334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.299628 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0010_tile.asset
+  artifactKey: Guid(9f0f99cc6ff53274dbdee0ecb3b7728b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0010_tile.asset using Guid(9f0f99cc6ff53274dbdee0ecb3b7728b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5300d9af05b6a935182c6b42dcd75863') in 0.017165 seconds
+  Import took 0.024390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.209379 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0010_tile.png
+  artifactKey: Guid(7a77aae0646da7c41bba2b9db63722d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0010_tile.png using Guid(7a77aae0646da7c41bba2b9db63722d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b94a7892e03fd651c589bf26b8f0c332') in 0.016988 seconds
+  Import took 0.024461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.242125 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0011_tile.asset
+  artifactKey: Guid(abf0a1afa3f3e5c42a6332410a153cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0011_tile.asset using Guid(abf0a1afa3f3e5c42a6332410a153cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83829495467077c467326e4133f71ff8') in 0.021193 seconds
+  Import took 0.027543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.210675 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0011_tile.png
+  artifactKey: Guid(369e71ba37ed79b4db81f6743adb20f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0011_tile.png using Guid(369e71ba37ed79b4db81f6743adb20f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c99c7b6c5270d31ab0de23bec14feca6') in 0.018459 seconds
+  Import took 0.022715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.265173 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0012_tile.asset
+  artifactKey: Guid(a3f9b9eda14c0d54099cfa641068913b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0012_tile.asset using Guid(a3f9b9eda14c0d54099cfa641068913b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95bad13ab17a6d23709011fcd1e861de') in 0.028644 seconds
+  Import took 0.038086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003725 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0012_tile.asset
+  artifactKey: Guid(a3f9b9eda14c0d54099cfa641068913b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0012_tile.asset using Guid(a3f9b9eda14c0d54099cfa641068913b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95bad13ab17a6d23709011fcd1e861de') in 0.007403 seconds
+  Import took 0.011794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.734000 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0012_tile.png
+  artifactKey: Guid(adbd9e1475ecb7a4ea0ff88c860ab7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0012_tile.png using Guid(adbd9e1475ecb7a4ea0ff88c860ab7b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97aaf0750d7893676e9b6ae127d3be63') in 0.022853 seconds
+  Import took 0.026322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.664504 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0013_tile.asset
+  artifactKey: Guid(8e645053f7f047b42a44dda9fd5134ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0013_tile.asset using Guid(8e645053f7f047b42a44dda9fd5134ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d11ab939bb79238d6b912ebaee28fc') in 0.025078 seconds
+  Import took 0.034087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002232 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0013_tile.asset
+  artifactKey: Guid(8e645053f7f047b42a44dda9fd5134ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0013_tile.asset using Guid(8e645053f7f047b42a44dda9fd5134ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26d11ab939bb79238d6b912ebaee28fc') in 0.010441 seconds
+  Import took 0.015225 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.255912 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0013_tile.png
+  artifactKey: Guid(27eb1324381d2be4bb895c77844858f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0013_tile.png using Guid(27eb1324381d2be4bb895c77844858f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de0ee07d8b42ff4fa3a0510f50e65d48') in 0.023297 seconds
+  Import took 0.027325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.577371 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0014_tile.asset
+  artifactKey: Guid(013612b929faeb7459e9d5c6ca5516db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0014_tile.asset using Guid(013612b929faeb7459e9d5c6ca5516db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7358cf5316e19071410e04e37c2433') in 0.046572 seconds
+  Import took 0.063708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.235336 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0014_tile.png
+  artifactKey: Guid(ff745f44c402e664ca209a1e60895f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0014_tile.png using Guid(ff745f44c402e664ca209a1e60895f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac7b0158a933fdb64bceadce6696eee') in 0.020527 seconds
+  Import took 0.024731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.618457 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0015_2_tile.asset
+  artifactKey: Guid(5ddb6e88205bc234ca2359e7b2c73361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0015_2_tile.asset using Guid(5ddb6e88205bc234ca2359e7b2c73361) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f993caecffa64a9cae5aac17d2fc460e') in 0.027373 seconds
+  Import took 0.033484 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.179400 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0015_2_tile.png
+  artifactKey: Guid(fa76cc88641498b4f9151ac07c012a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0015_2_tile.png using Guid(fa76cc88641498b4f9151ac07c012a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35a77d46db35ef9a345daff83fb9a1d') in 0.018582 seconds
+  Import took 0.025271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.726955 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0015_tile.asset
+  artifactKey: Guid(50e7c0b582174d8459d8d69a8ac5d026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0015_tile.asset using Guid(50e7c0b582174d8459d8d69a8ac5d026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29225abf9a93734fb178c43af821263e') in 0.022148 seconds
+  Import took 0.033241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007802 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0015_tile.asset
+  artifactKey: Guid(50e7c0b582174d8459d8d69a8ac5d026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0015_tile.asset using Guid(50e7c0b582174d8459d8d69a8ac5d026) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29225abf9a93734fb178c43af821263e') in 0.007294 seconds
+  Import took 0.014663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.129068 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0015_tile.png
+  artifactKey: Guid(12cf8a199bf744a4b8b0611419afe03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0015_tile.png using Guid(12cf8a199bf744a4b8b0611419afe03d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78b4bddbbede17fcac53960f884113ca') in 0.026048 seconds
+  Import took 0.030600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.652524 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0016_tile.asset
+  artifactKey: Guid(e48e4533ddda7034292fec54691319d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0016_tile.asset using Guid(e48e4533ddda7034292fec54691319d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1610397d016ca187f057eef9bee3b12f') in 0.017761 seconds
+  Import took 0.022735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.167575 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0016_tile.png
+  artifactKey: Guid(6c77db8ee71f26e4cba2f0276a2b93bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0016_tile.png using Guid(6c77db8ee71f26e4cba2f0276a2b93bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a567523b6fa4c3137f902b2049efd59c') in 0.021027 seconds
+  Import took 0.025900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.896189 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0017_tile.asset
+  artifactKey: Guid(6a422774c8833ef4ca4af345524ff355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0017_tile.asset using Guid(6a422774c8833ef4ca4af345524ff355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e5dd0482e9e8c37762baf2dcac63f8') in 0.029087 seconds
+  Import took 0.034661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0017_tile.asset
+  artifactKey: Guid(6a422774c8833ef4ca4af345524ff355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0017_tile.asset using Guid(6a422774c8833ef4ca4af345524ff355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e5dd0482e9e8c37762baf2dcac63f8') in 0.012562 seconds
+  Import took 0.018212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.123303 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0017_tile.png
+  artifactKey: Guid(bdd77c83a8d705a4c87000f604c1496e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0017_tile.png using Guid(bdd77c83a8d705a4c87000f604c1496e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d1e6eb9547f69f54fb7e48c4754f60') in 0.025090 seconds
+  Import took 0.040447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002039 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0017_tile.png
+  artifactKey: Guid(bdd77c83a8d705a4c87000f604c1496e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0017_tile.png using Guid(bdd77c83a8d705a4c87000f604c1496e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d1e6eb9547f69f54fb7e48c4754f60') in 0.007688 seconds
+  Import took 0.020745 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.527734 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0018_tile.asset
+  artifactKey: Guid(fe42fb39ef875ca4db994cf9e0776fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0018_tile.asset using Guid(fe42fb39ef875ca4db994cf9e0776fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '292ec9ee717dc3bbb9bbe6bb30d1c1f8') in 0.022277 seconds
+  Import took 0.029480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.171922 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0018_tile.png
+  artifactKey: Guid(fa0bb7e3febe4ff459b37f31a0ae8104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0018_tile.png using Guid(fa0bb7e3febe4ff459b37f31a0ae8104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6141a8e1d925bb73c536118e97019ac') in 0.021643 seconds
+  Import took 0.026044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.418117 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0019_tile.asset
+  artifactKey: Guid(f658c6204ca86f04d89affe285e87626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0019_tile.asset using Guid(f658c6204ca86f04d89affe285e87626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1944d0d50824805fdacb20c67b372e6') in 0.021317 seconds
+  Import took 0.030116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.135257 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0019_tile.png
+  artifactKey: Guid(c32bebb338eceb14aa237fad9aa72fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0019_tile.png using Guid(c32bebb338eceb14aa237fad9aa72fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd592b0c8e6e3306b39a7011d62e3777e') in 0.019101 seconds
+  Import took 0.025247 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 10.21 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 48 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 54.1 MB.
+System memory in use after: 54.2 MB.
+
+Unloading 48 unused Assets to reduce memory usage. Loaded Objects now: 2327.
+Total: 9.251100 ms (FindLiveObjects: 0.584700 ms CreateObjectMapping: 0.724500 ms MarkObjects: 7.851100 ms  DeleteObjects: 0.087700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.924929 seconds.
+  path: Assets/Art/Tileset/Tiles/Ground_grass_0019_tile.png
+  artifactKey: Guid(c32bebb338eceb14aa237fad9aa72fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Tileset/Tiles/Ground_grass_0019_tile.png using Guid(c32bebb338eceb14aa237fad9aa72fc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '761f870633ee42876ecd95595407c60e') in 0.019131 seconds
+  Import took 0.023827 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004111 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.640 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1902 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.7 MB.
+System memory in use after: 90.8 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2331.
+Total: 4.977000 ms (FindLiveObjects: 0.320600 ms CreateObjectMapping: 0.085900 ms MarkObjects: 4.529300 ms  DeleteObjects: 0.039100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004427 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/Editor/GPGSUpgrader.cs:105)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.444 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.70 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1903 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.9 MB.
+System memory in use after: 91.0 MB.
+
+Unloading 50 unused Assets to reduce memory usage. Loaded Objects now: 2334.
+Total: 5.887900 ms (FindLiveObjects: 0.969900 ms CreateObjectMapping: 0.299700 ms MarkObjects: 4.560100 ms  DeleteObjects: 0.054800 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
