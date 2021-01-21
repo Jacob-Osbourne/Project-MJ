@@ -30,23 +30,41 @@ public class PlayerController : MonoBehaviour
     [Header("Player Score")]
     public PlayerScore PlayerScoreScript;
 
+    public bool playOne = true;
+    public bool playOnceLanding = false;
+
     private Rigidbody2D rb;
     private Animator animator;
     private bool jumpNow = false;
     public bool isDead = false;
+    private AudioManager am;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         isDead = false;
+        playOnceLanding = false;
+
+        am = FindObjectOfType<AudioManager>();
     }
 
     void Update()
     {
+        if (isCharging)
+        {
+            if (playOne)
+            {
+                am.Play("Charge");
+                playOne = false;
+            }
+        }
+
         if (!jumpOnCD)
         {
-            if (Input.GetMouseButton(0) && !isJumping)
+
+            if (Input.GetMouseButton(0) && !isJumping && !isDead)
             {
+                
                 chargePower += Time.deltaTime;
                 ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 //Debug.Log(ray);
@@ -55,6 +73,8 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isCharging", true);
 
                 jumpLeftRight = (ray.GetPoint(0).x - gameObject.transform.position.x);
+
+                
 
                 if (jumpLeftRight > 0)
                 {
@@ -67,9 +87,13 @@ public class PlayerController : MonoBehaviour
 
             }
 
-            if (Input.GetMouseButtonUp(0) && !isJumping && isCharging)
+            if (Input.GetMouseButtonUp(0) && !isJumping && isCharging && !isDead)
             {
-
+                playOnceLanding = true;
+                playOne = true;
+                am.Stop("Charge");
+                am.Play("Jump");
+                am.Play("Wind");
                 isCharging = false;
                 animator.SetBool("isCharging", false);
                 animator.SetBool("Grounded", false);
@@ -97,11 +121,15 @@ public class PlayerController : MonoBehaviour
         if (isGrounded)
         {
             isJumping = false;
+
+            
         }
 
         isHittingWallR = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.2f, gameObject.transform.position.y - 0.3f), new Vector2(0.1f, 0.6f), 0f, groundMask);
 
         isHittingWallL = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.6f, gameObject.transform.position.y - 0.3f), new Vector2(0.1f, 0.6f), 0f, groundMask);
+
+        
     }
 
     private void FixedUpdate()
@@ -149,6 +177,13 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
+            if (playOnceLanding)
+            {
+                am.Stop("Wind");
+                am.Play("Land");
+                playOnceLanding = false;
+            }
+
             animator.SetBool("Grounded", true);
             chargePower = 0;
             jumpOnCD = true;
@@ -168,6 +203,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("DeathZone"))
         {
+            am.Stop("Wind");
             // death bool
             isDead = true;
             //save score

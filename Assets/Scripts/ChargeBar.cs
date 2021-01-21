@@ -11,6 +11,7 @@ public class ChargeBar : MonoBehaviour
     public GameObject chargeBar;
     public Slider slider;
 
+    //private AudioManager am;
     public Text chargePercent;
 
    
@@ -18,11 +19,14 @@ public class ChargeBar : MonoBehaviour
     {
         pc = FindObjectOfType<PlayerController>();
         gradient.Evaluate(pc.chargePower);
+
+        //am = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //am.Play("Charge");
 
         slider.maxValue = pc.maxCharge;
         slider.value = pc.chargePower;
