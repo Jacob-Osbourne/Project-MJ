@@ -561,7 +561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Charge
-    clip: {fileID: 8300000, guid: 872346a91a6d06247b55a6edb02a966a, type: 3}
+    clip: {fileID: 8300000, guid: 46b449fc4d1086b4599a1489ff715289, type: 3}
     volume: 0.075
     pitch: 1
     loop: 0

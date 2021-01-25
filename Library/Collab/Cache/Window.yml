@@ -14,30 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scenes/Game.unity
-    - Assets/Scenes/Main Menu.unity
-    - Assets/Scripts/AudioManager.cs
-    - Assets/Scripts/AudioManager.cs.meta
-    - Assets/Scripts/ChargeBar.cs
-    - Assets/Scripts/PlayerController.cs
-    - Assets/Scripts/Sounds.cs
-    - Assets/Scripts/Sounds.cs.meta
-    - Assets/Sound.meta
-    - Assets/Sound/Charge.mp3
-    - Assets/Sound/Charge.mp3.meta
-    - Assets/Sound/Land.wav
-    - Assets/Sound/Land.wav.meta
-    - Assets/Sound/Music.mp3
-    - Assets/Sound/Music.mp3.meta
-    - Assets/Sound/jump.wav
-    - Assets/Sound/jump.wav.meta
-    - Assets/Sound/jumpland44100.mp3
-    - Assets/Sound/jumpland44100.mp3.meta
-    - Assets/Sound/wind.mp3
-    - Assets/Sound/wind.mp3.meta
     - 
-    m_Values: 01010101010101010101010101010101010101010101
-  RevisionSummary: 
+    m_Values: 01
+  RevisionSummary: ??
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
