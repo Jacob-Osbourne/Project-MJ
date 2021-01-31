@@ -18,7 +18,7 @@ public class Monetization : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(RunInitialAd());
+        //StartCoroutine(RunInitialAd());
         ShowInterstitialAd();
     }
 

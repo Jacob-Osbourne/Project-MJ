@@ -1,6 +1,9 @@
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms;
 
 public class PlayGamesScript : MonoBehaviour
 {
@@ -16,18 +19,38 @@ public class PlayGamesScript : MonoBehaviour
 
     void SignIn() 
     {
-        Social.localUser.Authenticate(success => { });
+        Social.localUser.Authenticate((bool success) =>
+        {
+            if (success)
+            {
+                Debug.Log("Login Success");
+            }
+            else
+            {
+                Debug.Log("Login Failed");
+            }
+        });
     }
 
     #region Leaderboards
     public static void AddScoreToLeaderboard(string leaderboardID, long score)
     {
-        Social.ReportScore(score, leaderboardID, success => { });
+        Social.ReportScore(score, leaderboardID, (bool success) =>
+        {
+            if (success)
+            {
+                Debug.Log("Score posted successfully");
+            }
+            else
+            {
+                Debug.Log("Score posted unsuccessfully");
+            }
+        });
     }
 
     public static void ShowLeaderboardsUI()
     {
-        Social.ShowLeaderboardUI();
+        PlayGamesPlatform.Instance.ShowLeaderboardUI("CgkI7sOaxNYaEAIQAA");
     }
     #endregion /Leaderboards
 

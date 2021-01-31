@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (!jumpOnCD)
+        if (!jumpOnCD && PlayerPrefs.GetInt("FirstPlay") == 1)
         {
 
             if (Input.GetMouseButton(0) && !isJumping && !isDead)
@@ -117,20 +117,16 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isFalling", false);
         }
 
-        isGrounded = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.4f, gameObject.transform.position.y - 0.84f), new Vector2(0.4f, 0.2f), 0f, groundMask);
+        isGrounded = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.4f, gameObject.transform.position.y - 0.92f), new Vector2(0.41f, 0.05f), 0f, groundMask);
 
         if (isGrounded)
         {
             isJumping = false;
-
-            
-
-
         }
 
-        isHittingWallR = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.2f, gameObject.transform.position.y - 0.3f), new Vector2(0.1f, 0.6f), 0f, groundMask);
+        isHittingWallR = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.2f, gameObject.transform.position.y - 0.42f), new Vector2(0.15f, 0.95f), 0f, groundMask);
 
-        isHittingWallL = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.6f, gameObject.transform.position.y - 0.3f), new Vector2(0.1f, 0.6f), 0f, groundMask);
+        isHittingWallL = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.6f, gameObject.transform.position.y - 0.42f), new Vector2(0.15f, 0.95f), 0f, groundMask);
 
         
     }
@@ -166,12 +162,12 @@ public class PlayerController : MonoBehaviour
 
         if (isHittingWallR)
         {
-            rb.AddForce(rb.transform.right * -10f);
+            rb.AddForce(rb.transform.right * -15f);
         }
 
         if (isHittingWallL)
         {
-            rb.AddForce(rb.transform.right * 10f);
+            rb.AddForce(rb.transform.right * 15f);
         }
 
     }
@@ -213,7 +209,7 @@ public class PlayerController : MonoBehaviour
             // death bool
             isDead = true;
             //save score
-            PlayGamesScript.AddScoreToLeaderboard(GPGSIds.leaderboard_high_scores, (long)PlayerScoreScript.scoreMax);
+            PlayGamesScript.AddScoreToLeaderboard("CgkI7sOaxNYaEAIQAA", (long)PlayerScoreScript.scoreMax);
             float playerHighScore = PlayerPrefs.GetFloat("HighScore");
             if (PlayerScoreScript.scoreMax > playerHighScore)
             {
@@ -228,13 +224,13 @@ public class PlayerController : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawCube(new Vector2(gameObject.transform.position.x -0.4f, gameObject.transform.position.y - 0.84f), new Vector2(0.4f, 0.2f));
+        Gizmos.DrawCube(new Vector2(gameObject.transform.position.x -0.4f, gameObject.transform.position.y - 0.92f), new Vector2(0.41f, 0.05f));
 
         Gizmos.color = Color.red;
-        Gizmos.DrawCube(new Vector2(gameObject.transform.position.x - 0.2f, gameObject.transform.position.y - 0.3f), new Vector2(0.1f, 0.6f));
+        Gizmos.DrawCube(new Vector2(gameObject.transform.position.x - 0.2f, gameObject.transform.position.y - 0.42f), new Vector2(0.15f, 0.95f));
 
         Gizmos.color = Color.red;
-        Gizmos.DrawCube(new Vector2(gameObject.transform.position.x - 0.6f, gameObject.transform.position.y - 0.3f), new Vector2(0.1f, 0.6f));
+        Gizmos.DrawCube(new Vector2(gameObject.transform.position.x - 0.6f, gameObject.transform.position.y - 0.42f), new Vector2(0.15f, 0.95f));
     }
 
 }

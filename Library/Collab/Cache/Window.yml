@@ -16,7 +16,7 @@ MonoBehaviour:
     m_Keys:
     - 
     m_Values: 01
-  RevisionSummary: ??
+  RevisionSummary: removed a debug.log
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

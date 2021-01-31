@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
-
     public void PlayGame()
     {
         SceneManager.LoadScene("Game");
@@ -20,4 +19,6 @@ public class ButtonController : MonoBehaviour
     {
         SceneManager.LoadScene("Main Menu");
     }
+
+    
 }
