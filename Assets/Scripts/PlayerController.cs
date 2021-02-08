@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,13 +14,17 @@ public class PlayerController : MonoBehaviour
     public bool isJumping = false;
     public float maxCharge = 2f;
     public Ray ray;
-    public bool jumpOnCD = false;
+    public bool jumpOnCD;
     public bool isGrounded;
     public LayerMask groundMask;
     public bool isHittingWallL;
     public bool isHittingWallR;
-
     public float TESTJUMP;
+    
+    [Header("Fail Safe")]
+    public float timer;
+
+    
 
     [Header("Animation Info")]
     public float PlayersY;
@@ -128,6 +133,15 @@ public class PlayerController : MonoBehaviour
 
         isHittingWallL = Physics2D.OverlapBox(new Vector2(gameObject.transform.position.x - 0.6f, gameObject.transform.position.y - 0.42f), new Vector2(0.15f, 0.95f), 0f, groundMask);
 
+        if(isGrounded && jumpOnCD)
+        {
+            FailSafeCheck(); 
+        }
+
+        if (isJumping)
+        {
+            timer = 0f;
+        }
         
     }
 
@@ -195,10 +209,19 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator JumpCooldown()
     {
-        yield return new WaitForSeconds(0.5f);
-        animator.SetBool("jumpOnCooldown", false);
+        yield return new WaitForSeconds(0.75f);
         jumpOnCD = false;
-      
+        animator.SetBool("jumpOnCooldown", false);
+    }
+
+    public void FailSafeCheck()
+    {
+        timer += Time.deltaTime;
+        if (timer > 1.5f)
+        {
+            jumpOnCD = false;
+            timer = 0f;
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
